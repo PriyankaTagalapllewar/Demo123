@@ -1,0 +1,12 @@
+Feature: Login  
+
+Scenario: Successefully Login with valid credential
+    Given: Launch the browser
+    When: Open the URL "https://admin-demo.nopcommerce.com/login"
+    And: Enter the Email Address "admin@yourstore.com"
+    And: Enter Password "admin"
+    And: Click on Login button
+    Then: Page should be "Dashboard / nopCommerce administration"
+    And: Click on Log Out button
+    Then: Page should be "Your store. Login"
+    And: close te browser 
